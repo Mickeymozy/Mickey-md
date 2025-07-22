@@ -68,9 +68,9 @@ global.waitttt = global.wait
 
 var channel = ''
 var community = ''
-var web = 'https://github.com/lazack28'
-var web2 = 'https://github.com/lazack28/Lazack-Device'
-let web3 = 'lazaromtaju12@gmail.com'
+var web = 'https://github.com/Mickeymozy'
+var web2 = 'https://github.com/Mickeymozy/Mickey-md'
+let web3 = 'mickdadyhamza@gmail.com'
 global.socials = [channel, community, web, web2, web3].getRandom()
 
 let category = "image"
