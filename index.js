@@ -11,7 +11,7 @@ import fs, {readdirSync, statSync, unlinkSync, existsSync, mkdirSync, readFileSy
 import yargs from 'yargs';
 import {spawn} from 'child_process'
 import lodash from 'lodash'
-import { yukiJadiBot } from './lazackcmds/jadibot-serbot.js'
+import { yukiJadiBot } from './mickey/jadibot-serbot.js'
 // Import the yukiJadiBot function from the jadibot-serbot.js file in the lazackcmds directory.
 import chalk from 'chalk'
 import syntaxerror from 'syntax-error'
@@ -40,15 +40,15 @@ const PORT = process.env.PORT || 3000
 
 let { say } = cfonts
 
-console.log(chalk.bold.redBright(`\n✰ Starting Lazack-Device V2 ✰\n`))
+console.log(chalk.bold.redBright(`\n✰ Starting Mickey-md ✰\n`))
 
-say('Lazack-Device V2', {
+say('Mickey-md', {
     font: 'block',
     align: 'center',
     colors: ['magentaBright']
 })
 
-say(`Developed By • Lazack28`, {
+say(`Developed By • mickeymozy`, {
     font: 'console',
     align: 'center',
     colors: ['blueBright']
