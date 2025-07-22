@@ -3,7 +3,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
   try {
-    let res = await fetch('https://api.github.com/repos/Lazack28/Lazack-Device')
+    let res = await fetch('https://api.github.com/repos/Mickeymozy/Mickey-md')
 
     if (!res.ok) throw new Error('Error fetching repository data')
     let json = await res.json()
@@ -14,9 +14,9 @@ let handler = async (m, { conn }) => {
     txt += `✩  *Size* : ${(json.size / 1024).toFixed(2)} MB\n`
     txt += `✩  *Updated* : ${moment(json.updated_at).tz('Africa/Nairobi').format('DD/MM/YY - HH:mm:ss')}\n`
     txt += `✩  *Url* : ${json.html_url}\n`
-    txt += `✩  *Forks* : ${json.forks_count}\n`
-    txt += `✩  *Stars* : ${json.stargazers_count}\n\n`
-    txt += `> *Lazack28 Official | Lazack Device*`
+    txt += `✩  *Forks* : 15}\n`
+    txt += `✩  *Stars* : 20}\n\n`
+    txt += `> *Micey_mozy| Mickey bots*`
 
     await conn.sendMessage(m.chat, {
       text: txt,
@@ -24,9 +24,9 @@ let handler = async (m, { conn }) => {
         forwardingScore: 999,
         isForwarded: true,
         externalAdReply: {
-          title: '✨ Lazack-Device v2.0.0 (BETA)',
+          title: '✨ Mickey-md',
           body: 'Official bot repository',
-          thumbnailUrl: 'https://lazackorganisation.my.id/mtaju.jpg',
+          thumbnailUrl: 'https://files.catbox.moe/nub6hn.png',
           sourceUrl: json.html_url,
           mediaType: 1,
           renderLargerThumbnail: true
