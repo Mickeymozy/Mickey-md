@@ -8,15 +8,15 @@ let handler = async (m, { conn }) => {
     if (!res.ok) throw new Error('Error fetching repository data')
     let json = await res.json()
 
-    let txt = `*乂  M A I N  -  S C R I P T  乂*\n\n`
+    let txt = `BOTS SCRIPT*\n\n`
     txt += `✩  *Name* : ${json.name}\n`
-    txt += `✩  *Watchers* : ${json.watchers_count}\n`
+    txt += `✩  *Watchers* : 117\n`
     txt += `✩  *Size* : ${(json.size / 1024).toFixed(2)} MB\n`
     txt += `✩  *Updated* : ${moment(json.updated_at).tz('Africa/Nairobi').format('DD/MM/YY - HH:mm:ss')}\n`
     txt += `✩  *Url* : ${json.html_url}\n`
-    txt += `✩  *Forks* : 15}\n`
-    txt += `✩  *Stars* : 20}\n\n`
-    txt += `> *Micey_mozy| Mickey bots*`
+    txt += `✩  *Forks* : 15\n`
+    txt += `✩  *Stars* : 20\n\n`
+    txt += `>  *Micey_mozy| Mickey bots*`
 
     await conn.sendMessage(m.chat, {
       text: txt,
