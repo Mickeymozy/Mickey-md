@@ -45,7 +45,7 @@ global.yukiJadibts = true
 
 //*─────────────────────────────*
 
-global.packname = '⪛✰ LAZACK-DEVICE ✰⪜'
+global.packname = '⪛✰ MICKEY-MD ✰⪜'
 global.botname = 'MICKEY-MD'
 global.wm = '✿◟MICKEY-MD◞✿'
 global.author = 'Made With By Mickeybots'
@@ -67,7 +67,7 @@ global.gp1 = 'https://chat.whatsapp.com/EATTgyi5jx16HgAggPg8yI?mode=r_c'
 global.community1 = 'https://chat.whatsapp.com/F9gdupBg7aJBs3SLFmTgWt?mode=r_c'
 global.channel = 'https://chat.whatsapp.com/F9gdupBg7aJBs3SLFmTgWt'
 global.channel2 = 'https://chat.whatsapp.com/F9gdupBg7aJBs3SLFmTgWt'
-global.md = 'https://github.com/Lazack28/Lazack-Device'
+global.md = 'https://github.com/Mickeymozy/Mickey-md'
 global.email = 'mickidadyhamza@gmail.com'
 
 //*─────────────────────────────*
