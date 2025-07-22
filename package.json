@@ -1,5 +1,5 @@
 {
-  "name": "Lazack-Bots",
+  "name": "Mickey-md",
   "version": "2.2.5",
   "description": "WhatsApp Bot Multi Device",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "directories": {
     "lib": "lib",
     "src": "src",
-    "plugins": "lazackcmds"
+    "plugins": "mickey"
   },
   "scripts": {
     "start": "node index.js",
@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Lazack28/Lazack-Device",
+  "homepage": "https://github.com/Mickeymozy/Mickey-md",
   "author": {
-    "name": "Lazack28"
+    "name": "mickeymozy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lazack28/Lazack-Device.git"
+    "url": "git+https://github.com/Mickeymozy/Mickey-md.git"
   },
   "bugs": {
-    "url": "https://github.com/Lazack28/Lazack-Device/issues"
+    "url": "https://github.com/Mickeymozy/Mickey-md/issues"
   },
   "license": "MIT-License",
   "dependencies": {
