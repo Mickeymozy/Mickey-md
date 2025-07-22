@@ -213,7 +213,7 @@ async function connectionUpdate(update) {
         }
     }
     if (connection == 'open') {
-        console.log(chalk.bold.green('\n❀ Lazack Device Connected Successfully ❀'))
+        console.log(chalk.bold.green('\n❀ Mickey-md Connected Successfully ❀'))
     }
     let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
     if (connection === 'close') {
@@ -311,7 +311,7 @@ if (global.yukiJadibts) {
     }
 }
 
-const pluginFolder = global.__dirname(join(__dirname, './lazackcmds/index'))
+const pluginFolder = global.__dirname(join(__dirname, './mickey/index'))
 const pluginFilter = (filename) => /\.js$/.test(filename)
 global.plugins = {}
 async function filesInit() {
