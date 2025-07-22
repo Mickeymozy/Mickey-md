@@ -25,7 +25,7 @@ let handler = async (m, { conn }) => {
   const userId = m.mentionedJid?.[0] || m.sender
   const user = global.db.data.users[userId] || {}
   const name = await conn.getName(userId)
-  const botname = conn.user?.name || 'LazackDevice 🌸'
+  const botname = conn.user?.name || 'mickey-md 🌸'
   const fecha = moment.tz('Africa/Nairobi').format('DD/MM/YYYY')
   const hora = moment.tz('Africa/Nairobi').format('HH:mm:ss')
   const uptime = clockString(process.uptime() * 1000)
@@ -52,16 +52,18 @@ let handler = async (m, { conn }) => {
     }
   }
 
-  let text = `╭━━❰ *Lazack-MD Menu* ❱━━╮
-┃ ✨ *Hello:* ${name}
-┃ 🤖 *Bot Name:* ${botname}
-┃ 📅 *Date:* ${fecha}
-┃ 🕒 *Time:* ${hora}
-┃ 🔋 *Uptime:* ${uptime}
-┃ 🧑‍🤝‍🧑 *Total Users:* ${totalreg}
-┃ 🎯 *Your Limit:* ${limit}
-┃ ${botOfc}
-╰━━━━━━━━━━━━━━━━━━━━━╯\n`
+ let text = `
+  ❰ 𝗠𝗜𝗖𝗞𝗘𝗬-𝗠𝗗 𝗠𝗘𝗡𝗨 ❱ 
+ 𝗛𝗲𝗹𝗹𝗼: ${name}
+ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲: ${botname}
+ 𝗗𝗮𝘁𝗲: ${fecha}
+ 𝗧𝗶𝗺𝗲: ${hora}
+ 𝗨𝗽𝘁𝗶𝗺𝗲: ${uptime}
+ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿𝘀: ${totalreg}
+ 𝗬𝗼𝘂𝗿 𝗟𝗶𝗺𝗶𝘁: ${limit}
+ ${botOfc}
+╰━━━━━━━━━━━━━━━━━━━╯
+`
 
   for (const tag of Object.keys(grouped)) {
     const section = tagsMap[tag] || '📚 Other Commands'
@@ -73,11 +75,11 @@ let handler = async (m, { conn }) => {
   }
 
   let channelRD = {
-    id: '120363321705798318@newsletter',
-    name: 'LazackOrganisation',
+    id: '120363422552152940@newsletter',
+    name: 'Mickey',
   }
 
-  let banner = 'https://lazackorganisation.my.id/mtaju.jpg'
+  let banner = 'https://files.catbox.moe/nub6hn.png'
   let redes = 'https://lazackorganisation.my.id'
   let textbot = `🌸 Thank you for using *${botname}*, ${name}!\n🔔 Follow our official channel and support on GitHub.`
 
